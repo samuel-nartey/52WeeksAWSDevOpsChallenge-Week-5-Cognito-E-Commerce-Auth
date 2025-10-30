@@ -1,9 +1,8 @@
-# 🛍️ E-Commerce Identity Management Architecture
+# 🛍️ E‑Commerce Identity Management Architecture (COGNITO PROJECT)
 
-This project demonstrates a **secure authentication and authorization system** for an **E-Commerce Platform** using **AWS Cognito**, **IAM**, and **CloudWatch**.  
-It manages **Customer** and **Seller** access to the platform through secure login, role-based permissions, and real-time monitoring.
+> Part of the **#52WeeksAWSDevOpsChallenge** — Week 5: Implementing AWS Cognito for E‑Commerce Authentication.
 
----
+This repository (named `52WeeksAWSDevOpsChallenge‑Week‑5‑Cognito‑E‑Commerce‑Auth`) is my Week 5 submission for the #52WeeksAWSDevOpsChallenge. It showcases a secure authentication and authorization architecture for an e‑commerce platform using AWS Cognito, IAM, and CloudWatch.  
 
 ## 📊 Architecture Overview
 
@@ -12,40 +11,38 @@ It manages **Customer** and **Seller** access to the platform through secure log
 ### 🔁 Flow Description
 
 **1. Customer or Seller**  
-Accesses the e-commerce website or mobile app to browse, shop, or manage their store.
+Accesses the e-commerce platform through the main website to browse products or manage store listings.
 
 **2. E-Commerce Frontend (index.html)**  
-Handles UI interaction and redirects users to **AWS Cognito’s hosted login domain** for authentication.
+Handles user interactions and redirects users to **AWS Cognito’s hosted login domain** for authentication.
 
 **3. AWS Cognito (Authentication Service)**  
 Manages:
-- User registration and sign-in  
+- User registration and login  
 - Password validation and reset  
 - Multi-Factor Authentication (MFA)  
 - Issuance of **ID** and **Access Tokens**
 
 **4. AWS IAM (Role Assignment)**  
-Assigns permissions based on authenticated user type:
-- **Customer:** Browse products, place orders  
-- **Seller:** Manage product listings, view sales, and inventory  
+After successful authentication, **IAM** assigns access permissions based on user type:
+- **Customer:** Browse products, add to cart, make purchases  
+- **Seller:** Manage inventory, view sales data, and update listings  
 
-**5. AWS CloudWatch (Monitoring & Security Logs)**  
-Tracks authentication events and alerts administrators of unusual login activity.
+**5. AWS CloudWatch (Monitoring & Logging)**  
+Tracks login events, MFA usage, and anomalies such as repeated login failures.  
+Helps detect suspicious activity and maintain account security.
 
 ---
 
 ## ⚙️ Project Structure
 
 Capstone Project/
-│
 ├── diagrams/
-│ └── cognito_project.drawio.png
-│
-├── index.html # Main landing page
-├── log_in.html # Login interface connected to AWS Cognito
-├── log_out.html # Logout flow and session termination
-└── README.md # Project documentation
-
+│   └── cognito_project.drawio.png   # Architecture diagram
+├── index.html                       # Main landing page
+├── log_in.html                       # Login interface connected to AWS Cognito
+├── log_out.html                      # Logout flow and session termination
+└── README.md                         # Project documentation
 
 ---
 
@@ -86,5 +83,5 @@ By integrating Cognito, IAM, and CloudWatch, the system ensures secure user acce
 
 ---
 
-**Author:** _Your Name_  
+**Author:** _Samuel Nartey Otuafo_  
 **Last Updated:** October 2025
