@@ -1,14 +1,14 @@
-# 🛍️ E‑Commerce Identity Management Architecture (COGNITO PROJECT)
+# E‑Commerce Identity Management Architecture (COGNITO PROJECT)
 
 > Part of the **#52WeeksAWSDevOpsChallenge** — Week 5: Implementing AWS Cognito for E‑Commerce Authentication.
 
 This repository (named `52WeeksAWSDevOpsChallenge‑Week‑5‑Cognito‑E‑Commerce‑Auth`) is my Week 5 submission for the #52WeeksAWSDevOpsChallenge. It showcases a secure authentication and authorization architecture for an e‑commerce platform using AWS Cognito, IAM, and CloudWatch.  
 
-## 📊 Architecture Overview
+##  Architecture Overview
 
 ![E-Commerce Identity Management Architecture](./diagrams/cognito_project.drawio.png)
 
-### 🔁 Flow Description
+###  Flow Description
 
 **1. Customer or Seller**  
 Accesses the e-commerce platform through the main website to browse products or manage store listings.
@@ -35,7 +35,7 @@ Helps detect suspicious activity and maintain account security.
 ---
 
 ```
-## ⚙️ Project Structure
+##  Project Structure
 
 Capstone Project/
 ├── diagrams/
@@ -49,7 +49,7 @@ Capstone Project/
 
 ---
 
-## 🧠 Technologies Used
+##  Technologies Used
 - **AWS Cognito** – Authentication and identity management  
 - **AWS IAM** – Role-based access control  
 - **AWS CloudWatch** – Authentication monitoring and alerting  
@@ -57,7 +57,7 @@ Capstone Project/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - AWS Account  
@@ -73,14 +73,14 @@ Capstone Project/
 
 ---
 
-## 🔒 Security Best Practices
+##  Security Best Practices
 - Enforce **MFA** for all sellers and admin roles.  
 - Enable **CloudWatch Alarms** for suspicious login attempts.  
 - Use **HTTPS** when hosting your site.  
 
 ---
 
-## 🧾 Summary
+##  Summary
 This **Capstone Project** showcases a simple yet powerful AWS-based authentication flow for an e-commerce environment.  
 By integrating Cognito, IAM, and CloudWatch, the system ensures secure user access, role-based control, and active monitoring.
 
