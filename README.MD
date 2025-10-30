@@ -34,7 +34,7 @@ Helps detect suspicious activity and maintain account security.
 
 ---
 
-
+```
 ## ⚙️ Project Structure
 
 Capstone Project/
@@ -45,11 +45,7 @@ Capstone Project/
 ├── log_out.html                      # Logout flow and session termination
 └── README.md                         # Project documentation
 
-
-
-
-
-
+```
 
 ---
 
